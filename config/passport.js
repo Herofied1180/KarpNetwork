@@ -66,7 +66,7 @@ module.exports = function(passport) {
                 newUser.local.password = newUser.generateHash(password);
                 newUser.local.wins = 0;
                 newUser.local.ach = 1;
-                newUser.local.ach1;
+                newUser.local.achs = [1];
 
                 // save the user
                 newUser.save(function(err) {
