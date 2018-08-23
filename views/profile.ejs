@@ -10,8 +10,9 @@
         .ach-title {
             text-align: center;
         }
-        .well {
-            align-content: center;
+        .col-centered{
+            float: none;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -26,7 +27,7 @@
     <div class="row">
 
         <!-- LOCAL INFORMATION -->
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-centered">
             <div class="well" id="well-container">
                 <h2 class="ach-title"><strong>Stats</strong>:</h2>
                 <h3><strong>Wins</strong>:<br> <%= user.local.wins %></h3>
