@@ -66,7 +66,7 @@ module.exports = function(passport) {
                 newUser.local.password = newUser.generateHash(password);
                 newUser.local.wins     = 0;
                 newUser.local.achs     = [1];
-                newUser.local.credits  = 2;
+                newUser.local.credits  = 10; // Give the user 10 free credits for signing up
 
                 // save the user
                 newUser.save(function(err) {
